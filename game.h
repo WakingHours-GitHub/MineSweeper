@@ -1,11 +1,11 @@
-﻿// 扫雷.h: 标准系统包含文件的包含文件
+﻿// game.h: 标准系统包含文件的包含文件
 // 或项目特定的包含文件。
 
 #pragma once
 
+
 #include<stdio.h>
 #include<stdlib.h>
-#include <setjmp.h>
 #include<time.h>
 
 #define ROW 9
@@ -13,6 +13,7 @@
 #define ROWS ROW + 2
 #define COLS COL + 2
 #define EASY_COUNT 10
+
 
 void game();
 void initBoard(char board[][COLS], int row, int col, char ch);

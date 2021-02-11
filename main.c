@@ -8,12 +8,12 @@ void mnue() {
 }
 
 void test() {
-	
+	// 初始化种子
 	srand((unsigned int)time(NULL));
 	int input = 0;
 
 	do {
-		mnue();
+		mnue(); // 打印菜单
 		printf("请输入选项：\n");
 		scanf_s("%d", &input);
 
@@ -26,9 +26,11 @@ void test() {
 		}
 
 	} while (input);
+
 }
 
 int main() {
+
 	test();
 	
 	return 0;
